@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/duitku/static/css/main.8fe19252.css",
+    "main.js": "/duitku/static/js/main.e3306258.js",
+    "static/js/488.594d0777.chunk.js": "/duitku/static/js/488.594d0777.chunk.js",
+    "service-worker.js": "/duitku/service-worker.js",
+    "index.html": "/duitku/index.html",
+    "main.8fe19252.css.map": "/duitku/static/css/main.8fe19252.css.map",
+    "main.e3306258.js.map": "/duitku/static/js/main.e3306258.js.map",
+    "488.594d0777.chunk.js.map": "/duitku/static/js/488.594d0777.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fe19252.css",
+    "static/js/main.e3306258.js"
+  ]
+}
