@@ -19,7 +19,7 @@ function formatDate(dateStr) {
   });
 }
 
-export default function ExpenseList({ expenses }) {
+export default function ExpenseList({ expenses, onEdit, onDelete }) {
   if (!expenses.length) {
     return (
       <div className="text-center text-gray-400 py-8">Belum ada pengeluaran</div>
@@ -39,9 +39,25 @@ export default function ExpenseList({ expenses }) {
               {item.category}
             </div>
           </div>
-          <div className="text-right">
+          <div className="flex flex-col items-end gap-2">
             <div className="text-xl font-bold text-emerald-500">
               {formatCurrency(item.amount)}
+            </div>
+            <div className="flex gap-2 mt-2">
+              <button
+                className="bg-yellow-400 hover:bg-yellow-500 text-white rounded-xl px-3 py-1 text-sm font-bold shadow active:opacity-80"
+                onClick={() => onEdit(idx)}
+                aria-label="Edit"
+              >
+                Edit
+              </button>
+              <button
+                className="bg-red-500 hover:bg-red-600 text-white rounded-xl px-3 py-1 text-sm font-bold shadow active:opacity-80"
+                onClick={() => onDelete(idx)}
+                aria-label="Hapus"
+              >
+                Hapus
+              </button>
             </div>
           </div>
         </div>
