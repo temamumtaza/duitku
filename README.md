@@ -13,6 +13,7 @@ Aplikasi pencatatan pengeluaran pribadi, ringan, mobile-first, dan siap di-insta
   - Tombol "Tambah" besar, mudah dijangkau jempol
 - **Daftar Pengeluaran**
   - Tampil seperti kartu chat, info lengkap: nama, nominal (format IDR), kategori, tanggal
+  - Bisa **edit** dan **hapus** pengeluaran
 - **Total Pengeluaran**
   - Bar ringkas, fixed di bawah layar
 - **Penyimpanan Lokal**
@@ -21,6 +22,8 @@ Aplikasi pencatatan pengeluaran pribadi, ringan, mobile-first, dan siap di-insta
   - Bisa di-install di iOS/Android, fullscreen, tanpa URL bar
 - **Mobile Native Feel**
   - UI besar, rounded, shadow lembut, animasi tap, padding luas
+  - **Header sticky**, **form sticky**, **total bar fixed**, **list scrollable**
+  - **Scroll lock**: hanya list pengeluaran yang bisa di-scroll
 
 ---
 
@@ -29,6 +32,25 @@ Aplikasi pencatatan pengeluaran pribadi, ringan, mobile-first, dan siap di-insta
 - [Tailwind CSS](https://tailwindcss.com/)
 - [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 - [PWA](https://web.dev/progressive-web-apps/)
+- [GitHub Pages](https://pages.github.com/)
+
+---
+
+## 🏗️ Arsitektur Singkat
+- **App.js**: State utama, handle add/edit/delete, layout sticky/fixed
+- **ExpenseForm.jsx**: Form tambah & edit pengeluaran
+- **ExpenseList.jsx**: List pengeluaran, tombol edit & hapus
+- **TotalAmount.jsx**: Bar total pengeluaran (fixed di bawah)
+- **localStorage**: Menyimpan data pengeluaran secara lokal
+- **Service Worker**: Untuk PWA/offline
+
+---
+
+## 📚 Istilah UI/UX
+- **Sticky**: Elemen tetap di posisi tertentu saat scroll, tapi masih dalam flow layout (biasa untuk header/form)
+- **Fixed**: Elemen selalu di posisi tertentu pada layar, tidak terpengaruh scroll (biasa untuk footer/bar total)
+- **Scrollable/Scroll View**: Kontainer yang bisa di-scroll, konten di dalamnya bisa lebih panjang dari layar
+- **Scroll lock**: Body/halaman tidak bisa di-scroll, hanya container tertentu yang bisa scroll
 
 ---
 
@@ -76,9 +98,38 @@ Aplikasi pencatatan pengeluaran pribadi, ringan, mobile-first, dan siap di-insta
 
 ---
 
-## 🏷️ Version
-- **v0.1.1-beta** – Fix bug data tidak tersimpan setelah refresh/close
-- **v0.1.0-beta** – MVP: Form input, tampilkan list, total, localStorage, PWA-ready
+## 🏷️ Release Notes
+
+### v1.0.0 (Stable)
+- MVP stabil, UI mobile friendly
+- Fitur tambah, edit, hapus pengeluaran
+- Header sticky, form sticky, total bar fixed, list scrollable
+- Data tersimpan di localStorage
+- PWA-ready, bisa di-install di HP
+- Live di GitHub Pages
+- Scroll lock: hanya list pengeluaran yang bisa di-scroll
+
+### v0.1.3-beta
+- Fitur edit & hapus pengeluaran, UI/UX sticky header, form, scrollable list, fixed total
+
+### v0.1.2-beta
+- Sudah live di GitHub Pages
+
+### v0.1.1-beta
+- Fix bug data tidak tersimpan setelah refresh/close
+
+### v0.1.0-beta
+- MVP: Form input, tampilkan list, total, localStorage, PWA-ready
+
+---
+
+## 🛟 Troubleshooting
+- **Perubahan tidak muncul di versi live?**
+  - Lakukan hard refresh (Ctrl+F5/Cmd+Shift+R)
+  - Jika install di HP, uninstall dulu lalu install ulang
+- **Data hilang?**
+  - Pastikan browser tidak dalam mode private/incognito
+  - Data hanya tersimpan di device/browser yang sama
 
 ---
 
