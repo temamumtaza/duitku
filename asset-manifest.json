@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/duitku/static/css/main.355e5361.css",
-    "main.js": "/duitku/static/js/main.e862582f.js",
+    "main.js": "/duitku/static/js/main.53d1a4b2.js",
     "static/js/488.594d0777.chunk.js": "/duitku/static/js/488.594d0777.chunk.js",
     "static/media/logo.svg": "/duitku/static/media/logo.134f6c1059cb3ae25cf65552476947b5.svg",
     "service-worker.js": "/duitku/service-worker.js",
     "index.html": "/duitku/index.html",
     "main.355e5361.css.map": "/duitku/static/css/main.355e5361.css.map",
-    "main.e862582f.js.map": "/duitku/static/js/main.e862582f.js.map",
+    "main.53d1a4b2.js.map": "/duitku/static/js/main.53d1a4b2.js.map",
     "488.594d0777.chunk.js.map": "/duitku/static/js/488.594d0777.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.355e5361.css",
-    "static/js/main.e862582f.js"
+    "static/js/main.53d1a4b2.js"
   ]
 }
