@@ -1,5 +1,7 @@
 # 💸 Duitku
 
+[![Deploy to GitHub Pages](https://img.shields.io/badge/Live-Duitku-green?logo=github)](https://temamumtaza.github.io/duitku)
+
 Aplikasi pencatatan pengeluaran pribadi, ringan, mobile-first, dan siap di-install sebagai PWA. Dibuat dengan React + Tailwind CSS, dirancang seperti aplikasi native untuk pengalaman terbaik di smartphone.
 
 ---
@@ -54,6 +56,16 @@ Aplikasi pencatatan pengeluaran pribadi, ringan, mobile-first, dan siap di-insta
    ```bash
    npm run build
    ```
+5. **Deploy ke GitHub Pages**
+   ```bash
+   npm run deploy
+   ```
+
+---
+
+## 🌐 Akses Aplikasi
+
+✨ [Buka Duitku di browser (GitHub Pages)](https://temamumtaza.github.io/duitku)
 
 ---
 
@@ -65,6 +77,7 @@ Aplikasi pencatatan pengeluaran pribadi, ringan, mobile-first, dan siap di-insta
 ---
 
 ## 🏷️ Version
+- **v0.1.1-beta** – Fix bug data tidak tersimpan setelah refresh/close
 - **v0.1.0-beta** – MVP: Form input, tampilkan list, total, localStorage, PWA-ready
 
 ---
