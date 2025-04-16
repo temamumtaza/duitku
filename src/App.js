@@ -6,13 +6,17 @@ import "./index.css";
 
 const STORAGE_KEY = "duitku_expenses";
 
-function App() {
-  const [expenses, setExpenses] = useState([]);
-
-  useEffect(() => {
+function getInitialExpenses() {
+  try {
     const data = localStorage.getItem(STORAGE_KEY);
-    if (data) setExpenses(JSON.parse(data));
-  }, []);
+    return data ? JSON.parse(data) : [];
+  } catch {
+    return [];
+  }
+}
+
+function App() {
+  const [expenses, setExpenses] = useState(getInitialExpenses);
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(expenses));
