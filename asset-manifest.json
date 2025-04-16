@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/duitku/static/css/main.36cf393a.css",
-    "main.js": "/duitku/static/js/main.31fd4fda.js",
+    "main.css": "/duitku/static/css/main.81922582.css",
+    "main.js": "/duitku/static/js/main.5cfdd355.js",
     "static/js/488.594d0777.chunk.js": "/duitku/static/js/488.594d0777.chunk.js",
     "service-worker.js": "/duitku/service-worker.js",
     "index.html": "/duitku/index.html",
-    "main.36cf393a.css.map": "/duitku/static/css/main.36cf393a.css.map",
-    "main.31fd4fda.js.map": "/duitku/static/js/main.31fd4fda.js.map",
+    "main.81922582.css.map": "/duitku/static/css/main.81922582.css.map",
+    "main.5cfdd355.js.map": "/duitku/static/js/main.5cfdd355.js.map",
     "488.594d0777.chunk.js.map": "/duitku/static/js/488.594d0777.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36cf393a.css",
-    "static/js/main.31fd4fda.js"
+    "static/css/main.81922582.css",
+    "static/js/main.5cfdd355.js"
   ]
 }
